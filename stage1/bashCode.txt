@@ -1,0 +1,6 @@
+$dict = @("Aa","Bb")
+foreach ($w in $dict) {
+   # echo trying $w
+   echo $w
+   .\steghide.exe extract -sf .\clueTwo.jpg --passphrase $w
+}
